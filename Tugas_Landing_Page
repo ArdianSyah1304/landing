@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffdf00;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    .btn-signup {
+      padding: 12px 30px;
+      background-color: #ffdf00;
+      color: #333;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-signup:hover {
+      background-color: #ffe954;
+    }
+
+    .social-icons {
+      margin-top: 60px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .social-icons a {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+    }
+
+    .facebook { background-color: #3b5998; }
+    .whatsapp { background-color: #25D366; }
+    .instagram {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+    .tiktok {
+      background-color: black;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.3);
+      margin-top: 40px;
+    }
+  </style>
+  <!-- Ikon dari Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MyLanding</div>
+    <nav>
+      <a href="#more">More</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#signup">Sign Up</a>
+    </nav>
+  </header>
+
+  
+  <section class="hero">
+    <h1>Welcome to Our Landing Page</h1>
+    <p>Your one-stop solution to everything!</p>
+    <a href="#signup"><button class="btn-signup">Sign Up Now</button></a>
+
+    <div class="social-icons">
+      <a class="facebook" href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a class="whatsapp" href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a class="instagram" href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a class="tiktok" href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </section>
+<section id="more" style="padding: 60px 20px;">
+    <h2>More Information</h2>
+    <p>This section contains additional info.</p>
+  </section>
+
+  <section id="about" style="padding: 60px 20px;">
+    <h2>About Us</h2>
+    <p>We are passionate about technology and innovation.</p>
+  </section>
+
+  <section id="contact" style="padding: 60px 20px;">
+    <h2>Contact</h2>
+    <p>Contact us at: ardian@email.com</p>
+  </section>
+
+  <section id="signup" style="padding: 60px 20px;">
+    <h2>Sign Up</h2>
+    <p>Join our community today.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MyLanding. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
